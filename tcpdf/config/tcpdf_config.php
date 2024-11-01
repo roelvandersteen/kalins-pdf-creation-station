@@ -2,7 +2,7 @@
 //============================================================+
 // File name   : tcpdf_config.php
 // Begin       : 2004-06-11
-// Last Update : 2014-09-02
+// Last Update : 2014-12-11
 //
 // Description : Configuration file for TCPDF.
 // Author      : Nicola Asuni - Tecnick.com LTD - www.tecnick.com - info@tecnick.com
@@ -210,7 +210,15 @@ define('K_THAI_TOPCHARS', true);
  * If true allows to call TCPDF methods using HTML syntax
  * IMPORTANT: For security reason, disable this feature if you are printing user HTML content.
  */
-define('K_TCPDF_CALLS_IN_HTML', true);
+define('K_TCPDF_CALLS_IN_HTML', false);
+
+/**
+ * List of TCPDF methods that are allowed to be called using HTML syntax.
+ * Note: each method name must end with surrounded with | (pipe) character.
+ * The constant K_TCPDF_CALLS_IN_HTML must be set to true.
+ * IMPORTANT: For security reason, disable this feature if you are allowing user HTML content.
+ */
+define('K_ALLOWED_TCPDF_TAGS', '');
 
 /**
  * If true and PHP version is greater than 5, then the Error() method throw new exception instead of terminating the execution.
