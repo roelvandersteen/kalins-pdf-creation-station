@@ -1094,9 +1094,9 @@ function kalinsPDF_createPDFDir(){
 
 class WP_Kalins_PDF_Creation_Station_Widget extends WP_Widget {
 
-  function WP_Kalins_PDF_Creation_Station_Widget() {
+  public function __construct() {
     $widget_ops = array( 'classname' => 'widget_KalinsPDFCreationStation', 'description' => __( "Show a link to the PDF version of the post or page" ) );
-    $this->WP_Widget('kalinsPDFCreationStation', __("PDF Creation Station"), $widget_ops);
+    parent::__construct('kalinsPDFCreationStation', __("PDF Creation Station"), $widget_ops);
   }
 
   // This code displays the user-facing widget
