@@ -1,0 +1,95 @@
+# General files
+*.log
+*.env
+*.env.*
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# PHPStorm project files
+.idea/
+*.iml
+*.iws
+
+# Composer
+/vendor/
+/composer.lock
+/.composer
+
+# Grunt
+/node_modules/
+/.grunt
+/package-lock.json
+
+# Bower
+/bower_components/
+/.bowerrc
+
+# PHP caches and logs
+*.cache
+*.phar
+*.swp
+/.vscode
+/.phpunit.result.cache
+
+# PHP Unit Testing
+/phpunit.xml
+/phpunit.xml.dist
+
+# Laravel-specific
+/storage/
+bootstrap/cache/
+
+# Symfony-specific
+/var/
+/bin/
+/app/config/parameters.yml
+/app/config/parameters.php
+
+# Yii-specific
+/runtime/
+/assets/
+/protected/config/main-local.php
+/protected/config/params-local.php
+
+# WordPress-specific
+/wp-config.php
+.htaccess
+
+# Ignore compiled assets (if applicable)
+/dist/
+/build/
+
+# Backup & temp files
+*.bak
+*.tmp
+*.temp
+
+# Ignore Sass/CSS build artifacts (if applicable)
+.sass-cache
+*.css.map
+
+# Ignore coverage reports
+/coverage/
+
+# User-specific config files
+*.user
+
+# Vim and other editor swap files
+*.swp
+*.swo
+*.swn
+
+# Lock files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs and databases
+logs
+*.sql
+*.sqlite
+
+# Ignore sensitive credentials
+/private
